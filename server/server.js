@@ -18,14 +18,18 @@ await connectCloudinary();
 //     ? process.env.CORS_ORIGIN
 //     : "http://localhost:5173",
 
+console.log(
+  "here is it ",
+  process.env.NODE_ENV === "production"
+    ? "https://chwaleed.me"
+    : "http://localhost:8080"
+);
+
 app.use(express.json());
 app.use(clerkMiddleware());
 app.use(
   cors({
-    origin:
-      process.env.NODE_ENV === "production"
-        ? process.env.CORS_ORIGIN
-        : "http://localhost:8080",
+    origin: true,
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"],
   })
