@@ -311,7 +311,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Navneet Singh**
+**CH Waleed**
 
-- GitHub: [@Navneetsingh04](https://github.com/Navneetsingh04)
-- LinkedIn: [@navneetsingh04](https://www.linkedin.com/in/navneetsingh04/)
+- GitHub: [@chwaleed](https://github.com/chwaleed)
