@@ -22,7 +22,10 @@ app.use(express.json());
 app.use(clerkMiddleware());
 app.use(
   cors({
-    origin: ["http://localhost:8080", "http://localhost:5173"],
+    origin:
+      process.env.NODE_ENV === "production"
+        ? process.env.CORS_ORIGIN
+        : "http://localhost:8080",
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"],
   })
